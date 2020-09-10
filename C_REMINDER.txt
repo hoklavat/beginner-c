@@ -1,0 +1,346 @@
+****C PROGRAMMING****
+
+[Compiler/IDE]
+* codeblocks
+* dev c++
+* turbo c++
+* netbeans
+
+[Program Sections]
+* Documentation/Comment
+* Link
+* Global Declaration
+* Main()
+* Subprogram
+
+[Program Stages]
+* Preprocessing (Source Code)
+* Compilation (Temporary Intermediate File)
+* Assembling (Object File)
+* Linking (Executable File)
+* Loading
+
+[Keywords]
+auto, break, case, char, const, continue, default, do, double, else, enum, extern, float, for, goto, if, int, long, register, return, short, signed, sizeof, static, struct, switch, typedef, union, unsigned, void, volatile, while
+
+[Declaring Variable]
+* data_type variable_name
+* starts with letter/underscore
+* no special symbols/spaces/keywords
+* int a = 2;
+
+[Data Types]
+* Primary (char, int, float, double)
+* Specifiers (unsigned, long, short)
+* Secondary (array, function, structure, union, enumeration, pointer)
+* User-Defined
+
+[Instruction Types]
+* Type Declaration
+* Arithmetic
+* Control (Sequence, Decision, Loop, Case)
+
+[Operators]
+* Arithmetic
+   - Addition/Unary Plus (+)
+   - Subtraction/Unary Minus (-)
+   - Multiplication (*)
+   - Division (/)
+   - Modulus (%)
+   - Increment (++)
+   - Decrement (--)
+* Relational
+   - Equal (==)
+   - Greater Than (>)
+   - Less Than (<)
+   - Greater Than or Equal (>=)
+   - Less Than or Equal (<=)
+   - Not Equal (!=)
+* Logical
+   - And (&&)
+   - Or (||)
+   - Not (!)
+* Assignment
+   - Assignment (=)
+   - Pluse Equal To (+=)
+   - Minus Equal To (-=)
+   - Multiply by Equal To (*=)
+   - Divide by Equal To (/=)
+   - Modulus by Equal To (%=)
+* Conditional
+   - Ternary (expression?if_true:if_false)
+* Bitwise
+   - And (&)
+   - Or (|)
+   - Exclusive Or (^)
+   - One’s Complement (~)
+   - Left Shift (<<)
+   - Right Shift (>>)
+* Special
+   - Size (sizeof())
+   - Address (&)
+   - Pointer (*)
+   - Function Call (())
+   - Array Element ([])
+
+[Escape Sequence Characters]
+* New Line (\n)
+* Back Slash (\b)
+* Tab (\t)
+* Carriage Return (\r)
+* Alert (\a)
+* Single Quote (\’)
+* Double Quote (\”)
+* Back Slash (\\)
+* Null (\0)
+* Alert (\a)
+* Form Feed (\f)
+* Vertical Tab (\v)
+* Question Mark (\?)
+* Hexadecimal (\x)
+* Octal (\o, \n)
+
+[Flow Chart Components]
+* Start/Stop
+* Input/Output
+* Decision Making
+* Process
+* Predefined Process
+* Looping
+* Connector
+* Flow Direction
+
+[Decision Making]
+* if-else
+* switch-case-default-break
+* ternary operator (?:)
+
+[Loop]
+* while
+* do-while
+* for
+
+[Jump]
+* break
+* continue
+* goto
+
+[Array Declaration]
+data_type variable_name[size];
+
+[Console Functions]
+printf, scanf, clrscr, getch, gotoxy, ...
+
+[String Formatters]
+* %d: decimal
+* %u: unsigned
+* %c: character
+* %s: string
+
+[Pointer Declaration]
+data_type *variable_name;
+p: address
+*p: value
+**pp: pointer-to-pointer, address of pointer
+p++: increment address by size of dataype
+
+[Function]
+* Library/User-Defined Function
+* Function Declaration: return_type function_name(parameters)
+* Function Definition
+* Function Call
+
+[Structure]
+* struct structure_name
+* structure padding (#pragma pack(1))
+* structure nesting
+* structure array
+
+[Union]
+* union union_name
+* size = member with largest size
+* no direct initialization
+* store only value of one member at a time
+
+[String Functions]
+strlen, strcpy, strcat, strrev, strcmp, strupr, strlwr, puts, gets
+
+[File Handling]
+* Functions
+   - Create
+   - Open
+   - Read
+   - Write
+   - Close
+* Modes
+   - Read(r): open existing
+   - Write(w): delete existing and create new
+   - Append(a): open existing or create new
+   - Read-Write(r+): open existing
+   - Read-Write(w+): create new
+   - Read-Append(a+): open existing
+   - Binary Write (wb+)
+   - Binary Read (rb)
+* fopen, fclose, fgetc, fputc, fprintf, fscanf, fread, fwrite, ...
+* fflush(stdin): Clear Standard Input Buffer
+* End of File (EOF)
+
+[Library File]
+* Compile Source Code (test.c)
+* Generate OBJ File (test.obj)
+* tlib stdio.lib + c:\ test.obj (Add to Existing Library)
+* tlib stdio.lib - c:\ test.obj (Delete from Existing Library)
+* Header File Prototype (test.h)
+* Options: Applications: Library (test.lib)
+
+[Function Call]
+* By Value (Value)
+* By Reference (Address)
+
+[Pointer to Function]
+* data_type (*pointer_name)();
+
+[Pointer to Structure]
+* struct struct_name *p; (Struct Pointer Declaration)
+* p=&s (Address Assignment)
+* p->name (Member Access)
+* (*p).name (Member Access)
+
+[Preprocessor Directives]
+* #include <file_name> (Header File)
+* #define (Macro Expansion)
+* #if, #elif, #else, #endif, #ifdef, #ifndef, #undif (Conditional Compilation)
+* #pragma
+   - startup function() (Execution Before Main)
+   - exit function() (Execution After Main)
+   - warn -rvl (Function Return Value)
+   - warn -par (Function Parameters)
+   - warn -rch (Reachable Code)
+
+[Command Line Arguments]
+* int argc (Number of Arguments)
+* char *argv[] (Argument Array)
+
+[Dynamic Memory Allocation]
+* Memory Segmentation 
+   - Stack Segment (Local/Auto Variables/Functions)
+   - Heap Segment (Dynamic Memory Allocation)
+   - Data Segment (Global/Static Variables)
+   - Code Segment (All Instructions)
+* stdlib.h (Header File)
+* Functions: malloc, calloc, realloc, free
+* data_type *ptr = (*data_type) malloc(byte_size)
+* realloc(ptr, new_size)
+
+[Storage Classes]
+* Automatic (auto): Stack Memory, Garbage Initialization, Local Scope, In-Block Lifetime
+* Register: CPU Register, Garbage Initialization, Local Scope, In-Block Lifetime, Fastest
+* Static: Code Memory, Zero Initialization, Local Scope, Value Persistence
+* Extern: Code Memory, Zero Initialization, Global Scope, Program Lifetime
+* extern (Initialization Required for Global Variable)
+
+[Memory Models]
+* Memory Segment: 16 x 64kB (1024kB = 1MB)
+   - 15: ROM
+   - 14: BIOS
+   - 11: TEXT VIDEO
+   - 10: GRAPHICS VIDEO
+   - 8: DATA SEGMENT (0x0000 - 0xFFFF)
+       * CODE (16kB)
+       * DATA (16kB)
+       * HEAP (16kB)
+       * STACK (16kB)
+* Near Pointer: Data Segment (16kB)
+* Far Pointer: Memory Segment (1MB), Segment:Offset
+* Tiny: CS Near:DS Near
+* Small: CS Near:DS Near
+* Medium: CS Far:DS Near
+* Compact: CS Near:DS Far
+* Large: CS Far:DS Far
+* Huge: CS Far:DS Far
+
+[Toggle Keys]
+* 0x417 (On/Off Status)
+   - 0: RIGHT-SHIFT
+   - 1: LEFT-SHIFT
+   - 2: CTRL
+   - 3: ALT
+   - 4: SCROLL-LOCK
+   - 5: NUM-LOCK
+   - 6: CAPS-LOCK
+   - 7: INSERT
+* 0x418 (Pressed/Released Status)
+   - 0: RIGHT-ALT
+   - 1: LEFT-ALT
+   - 2: SYSTEM-REQ
+   - 3: HOLD-STATE
+   - 4: SCROLL-LOCK
+   - 5: NUM-LOCK
+   - 6: CAPS-LOCK
+   - 7: INSERT
+
+[Registers]
+* General Purpose Registers (16-Bit)
+   - AX (AL + AH)
+   - BX (BL + BH)
+   - CX (CL + CH)
+   - DX (DL + DH)
+* Segment Registers (16-Bit)
+   - CS (Code Segment)
+   - DS (Data Segment)
+   - ES (Extra Segment)
+   - SS (Stack Segment)
+* Offset Registers (16-Bit)
+   - IP (Instruction Pointer)
+   - SP (Stack Pointer)
+   - BP (Base Pointer)
+   - SI (Source Index)
+   - DI (Destination Index)
+* Flag Register (16-Bit)
+* int86() (dos.h)
+   - interrupt number
+   - input register
+   - output register
+* union REGS
+   - struct WORDREGS x
+       * unsigned int ax, bx, cx, dx
+       * unsigned int si, di, cflag, flags
+   - stuct BYTEREGS h
+       * unsigned char al, ah, bl, bh
+       * unsigned char cl, ch, dl, dh
+
+[BIOS Functions]
+* Interrupt Vector Table (IVT)
+   - 0-255
+   - getvect (Get Address of ISR)
+   - setvect (Set Address of User Defined Interrupt Handler)
+   - keep (Reserve Memory after Program Termination)
+* Mouse
+   - Interrupt: 0x33
+   - Initialize Mouse: AX = 0 (Success: fff, Fail: 0)
+   - Show Pointer: AX = 1
+   - Hide Pointer: AX = 2
+   - Button Status: AX = 3 (BX = 0: No Key, BX = 1: Left Button, BX = 2: Right Button, CX: X, DX: Y)
+   - Position: AX = 4
+   - Horizontal Limits: AX = 7 (CX: X1, DX: X2)
+   - Vertical Limits: AX = 8 (CX: Y1, DX: Y2)
+
+[Graphics]
+* Text Video: 25 x 80 = 2000 Cells
+   - 8-Bit: Character
+   - 8-Bit: Color
+   - Starting Address: 0xB8000000
+* line, getmaxx, getmaxy, setcolor, setlinestyle, settextstyle, outtextxy, rectangle, circle, arc, bar, setfillstyle, setbkcolor, setfillstyle, setbkcolor, floodfill, cleardevice, getimage, putimage, imagesize
+
+[File/Directory Mods]
+* _chmod
+   - Path
+   - Read/Apply Attributes (0/1)
+   - Dos File Attributes
+* FA_RDONLY (Read-Only)
+* FA_HIDDEN (Hidden)
+* FA_SYSTEM (System)
+* FA_LABEL (Volume Label)
+* FA_DIRECT (Directory)
+* FA_ARCH (Archive)
+   - Fail Return: -1
