@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <conio.h>
-#include "..\source\024.h"
+#include "24-LibraryH.h"
 
 void main()
 {
